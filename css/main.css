@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src:
+        url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+image {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1040px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.sitelogo {
+    display: block;
+}
+
+.navbar {
+
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+
+}
+
+.navbar__list {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+
+}
+
+.navbar__item {
+    margin-left: auto;
+    margin-left: 30px;
+}
+
+.navbar__item--last {
+    margin-left: 40px;
+
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+}
+.navbar__input{
+    font-size: 15px;
+    width: 160px;
+    border: none;
+    border-bottom: 1px solid #333333; ;
+}
+
+.hero {
+    padding-top: 91px;
+    background-image: url("../images/watches.png");
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: calc(50% + 520px);
+    height:567px ;
+
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 30px;
+}
+
+.hero__text__box {
+    padding-left: 40px;
+    width: 450px;
+    border-left: 3px solid #888888;
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+}
+
+.hero__link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #EA625C;
+    padding: 12px 38.5px;
+    text-decoration: none;
+    margin-bottom: 185px;
+}
+/* _______________________________________________________________________________________________________________0_ */
+
+.content-section {
+    padding: 68px 0 140px;
+  }
+  
+  .content-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .content {
+    width: 300px;
+  }
+  
+  .content__title {
+    margin: 0;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222222;  
+  }
+  
+  .content__text {
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #333333;
+  }
+  
+  .content__span {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .span {
+    display: inline;
+    width: 8px;
+    height: 8px;
+    background-color:#DDDDDD;
+  }
+  
+  .span-link {
+    
+  }
+  
+  .content__link {
+    padding-left: 50px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #EA625C;
+  }
+  
+  .content__link::before {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #EA625C;
+  }
+
+
+/* _____________________________________________________________________________________________ */
+.buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+}
+.info {
+    margin-right: 0;
+    width: 490px;
+    height: 387px;
+}
+
+.info__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.info__text {
+    margin: 0;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    border-left: 3px solid #888;
+    color: #777777;
+    margin-bottom: 35px;
+}
+
+.info__link {
+    margin: 0;
+
+    padding: 12px 90px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #EA625C;
+    color: #FFFFFF;
+}
+.info-section__img{
+    display: flex;
+}
+/* _________________________________________________________________________________________ */
+.site-footer{
+    padding: 240px 0 239px 0;
+    background-image: url("../images/runners\ 1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+}
+.footer{
+    padding-top: 54px;
+    padding-left: 557px;
+}
+.footer__content{
+    width: 490px;
+}
+.footer__title{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.footer__text-wrapper{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+.footer__text-wrapper::before{
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 2.5px;
+    height: 100%;
+    background-color: #fff;
+}
+.footer__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.footer__link{
+    padding: 12px 46px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #EA625C;
+    text-decoration: none;
+
+}
